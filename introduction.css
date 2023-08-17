@@ -1,0 +1,13 @@
+@charset "utf-8";
+body {
+    background-color: rgb(0,200,200);
+    color: rgb(200,0,0);
+    font-family: 'Century Gothic', Callibri,sans-serif;
+}
+figure {
+    float: right;
+}
+img#photo {
+    height: 500px;
+    width: auto;
+}
