@@ -25,6 +25,7 @@ p {
 }
 .headings {
     font-family: 'Comic Sans MS';
+    margin-top: 2px;
 }
 .color-palette {
     border-radius: 50%;
