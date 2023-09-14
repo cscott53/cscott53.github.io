@@ -23,7 +23,11 @@ footer {
     margin-bottom: 10px;
     font-size: 0.8em;
 }
-img {
-    height: 40px;
+#photo {
+    height: 500px;
+    width: auto;
+}
+.validate {
+    height: 30px;
     width: auto;
 }
