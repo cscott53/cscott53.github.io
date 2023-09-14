@@ -14,7 +14,7 @@ main {
     margin: auto;
     width: 60vw;
 }
-main:not(.intro) {
+main:not(.resize) {
     height: 80vh;
 }
 ul {
