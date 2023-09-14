@@ -6,7 +6,7 @@ body {
     text-align: center;
     color: orange;
     background-color: rgb(71, 120, 120);
-    height: 100vh;
+    height: 100%;
     width: 80vw;
     margin: auto;
 }
