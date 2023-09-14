@@ -20,9 +20,6 @@ main:not(.intro) {
 ul {
     text-align: left;
 }
-.toc {
-    list-style-type: none;
-}
 footer {
     margin-top: 0px;
     margin-bottom: 10px;
