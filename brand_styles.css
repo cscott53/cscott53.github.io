@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 footer {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -29,4 +28,20 @@ p {
 }
 .headings {
     font-family: 'Comic Sans MS';
+}
+.color-palette {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: auto 20px;
+}
+.stripes {
+    background-color: rgb(184, 134, 134);
+}
+.background {
+    background-color: rgb(71, 120, 120);
+}
+.text-color {
+    background-color: orange;
 }
