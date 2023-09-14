@@ -15,7 +15,7 @@ main {
     width: 60vw;
 }
 main:not(.resize) {
-    height: 80vh;
+    height: 70vh;
 }
 ul {
     text-align: left;
