@@ -32,6 +32,7 @@ footer {
 .validate {
     height: 30px;
     width: auto;
+    margin-top: 4px;
 }
 a, a:visited {
     color: cyan;
