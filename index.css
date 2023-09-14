@@ -2,7 +2,7 @@
 body {
     background-color: rgb(184, 134, 134);
 }
-#body-container {
+#body-container, footer {
     text-align: center;
     color: orange;
     background-color: rgb(71, 120, 120);
