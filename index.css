@@ -18,7 +18,7 @@ main:not(.intro) {
     height: 88vh;
 }
 ul {
-    text-align: center; /* to center the bullets with the text in the intro */
+    text-align: left;
 }
 .toc {
     list-style-type: none;
