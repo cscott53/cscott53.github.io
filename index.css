@@ -12,8 +12,10 @@ body {
 }
 main {
     margin: auto;
+    width: 60vw;
+}
+main:not(.intro) {
     height: 88vh;
-    width: 50vw;
 }
 .toc {
     list-style-type: none;
@@ -30,4 +32,7 @@ footer {
 .validate {
     height: 30px;
     width: auto;
+}
+a, a:visited {
+    color: cyan;
 }
