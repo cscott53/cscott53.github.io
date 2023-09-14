@@ -12,9 +12,6 @@ header {
 header,footer {
     height: 30px;
 }
-* {
-    overflow: hidden;
-}
 #time {
     float: right;
 }
