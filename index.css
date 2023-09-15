@@ -13,9 +13,11 @@ body {
     padding-right: 20px; */
 }
 main {
-    text-align: left;
     margin: auto;
     width: 60vw;
+}
+main p, main ul {
+    text-align: left;
 }
 main:not(.resize) {
     height: 70vh;
