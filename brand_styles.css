@@ -13,20 +13,13 @@ header {
 header,footer {
     height: 30px;
 }
-#time {
-    float: right;
-}
+
 #heading > h1 {
     font-size: 1.5em;
     margin-top: 0px;
 }
-p {
-    width: 50%;
-    margin-inline: auto;
-}
 .headings {
     font-family: 'Comic Sans MS';
-/*     margin-top: 2px; */
     display: block;
 }
 .color-palette {
@@ -39,10 +32,10 @@ p {
     margin: auto 20px;
 }
 .stripes {
-    background-color: rgb(184, 134, 134);
+    background-color: #B88686;
 }
 .background {
-    background-color: rgb(71, 120, 120);
+    background-color: #477878;
 }
 .text-color {
     background-color: orange;
