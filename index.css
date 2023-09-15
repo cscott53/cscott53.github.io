@@ -3,7 +3,6 @@ body {
     background-color: rgb(184, 134, 134);
 }
 #body-container, footer {
-    text-align: center;
     color: orange;
     background-color: rgb(71, 120, 120);
     height: 100%;
@@ -16,9 +15,6 @@ main {
 }
 main:not(.resize) {
     height: 70vh;
-}
-ul {
-    text-align: left;
 }
 footer {
     margin-top: 0px;
