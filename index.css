@@ -8,6 +8,8 @@ body {
     height: 100%;
     width: 80vw;
     margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 main {
     margin: auto;
