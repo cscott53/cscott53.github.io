@@ -27,7 +27,7 @@ header,footer {
     width: 40px;
     height: 40px;
     border: 1px solid;
-    border-color: black;
+    color: black; /* border color and text color */
     display: inline-block;
     margin: auto 20px;
 }
