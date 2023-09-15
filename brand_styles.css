@@ -30,6 +30,7 @@ header,footer {
     color: black; /* border color and text color */
     display: inline-block;
     margin: auto 20px;
+    font-size: 0.3em;
 }
 .stripes {
     background-color: #B88686;
