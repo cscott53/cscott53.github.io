@@ -9,12 +9,14 @@ footer {
 }
 header {
     margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 header,footer {
     height: 30px;
 }
-
+header, h2 {
+    display: block;
+}
 #heading > h1 {
     font-size: 1.5em;
     margin-top: 0px;
