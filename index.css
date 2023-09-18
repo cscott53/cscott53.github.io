@@ -38,3 +38,6 @@ footer {
 a, a:visited {
     color: cyan;
 }
+figure {
+    float: right;
+}
