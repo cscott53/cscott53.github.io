@@ -8,7 +8,7 @@ body {
     background-color: rgb(71, 120, 120);
     height: 100%;
     width: 80vw;
-    margin: auto;
+    margin: 0 auto;
 /*     padding-left: 20px;
     padding-right: 20px; */
 }
@@ -16,11 +16,14 @@ main {
     margin: auto;
     width: 60vw;
 }
-main p, main ul {
+main {
     text-align: left;
 }
-main:not(.resize) {
-    height: 70vh;
+h1 {
+    text-align: center;
+}
+main {
+    min-height: 70vh;
 }
 footer {
     margin-top: 0px;
