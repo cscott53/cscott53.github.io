@@ -15,15 +15,11 @@ body {
 main {
     margin: auto;
     width: 60vw;
-}
-main {
     text-align: left;
+    min-height: 70vh;
 }
 h1 {
     text-align: center;
-}
-main {
-    min-height: 70vh;
 }
 footer {
     margin-top: 0px;
