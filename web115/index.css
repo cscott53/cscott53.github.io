@@ -45,11 +45,13 @@ figure {
     display: inline-block;
     border-radius: 5px;
     border: 1px solid #444;
-    height: 22px;
-    width: 84px;
-    padding: auto;
+    height: 25px;
+    width: 90px;
     background-color: #477878;
 }
 header a {
     font-size: 1em;
+}
+.links a {
+    margin: auto;
 }
