@@ -1,11 +1,11 @@
 @charset "utf-8";
 body {
-    background-color: rgb(184, 134, 134);
+    background-color: #B88686;
 }
 #body-container, footer {
     color: orange;
     text-align: center;
-    background-color: rgb(71, 120, 120);
+    background-color: #477878;
     height: 100%;
     width: 80vw;
     margin: 0 auto;
