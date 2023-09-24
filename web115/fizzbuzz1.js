@@ -2,20 +2,20 @@ document.getElementById('submit').onclick = () => {
     let firstName = document.getElementById('first-name').value
     let middleInitial = document.getElementById('middle-initial').value
     let lastName = document.getElementById('last-name').value
-    document.getElementById('welcome').textContent = `Welcome to Scripts Galore, ${firstName} ${middleInitial}. ${lastName}`
+    document.getElementById('welcome').textContent = `Welcome to Scripts Galore, ${firstName} ${middleInitial} ${lastName}`
     let count = 140
     for (let i = 1; i <= count; i++) {
         let fizzbuzz = document.getElementById('fizzbuzz')
         let status = ''
         if (!(i % 15)) {
-            status = 'fizzbuzz'
+            status = 'Scripts unwrapped'
         } else if (!(i % 5)) {
-            status = 'buzz'
+            status = 'Unwrapped'
         } else if (!(i % 3)) {
-            status = 'fizz'
+            status = 'Scripts'
         } else {
-            status = 'nothing'
+            status = 'JS'
         }
-        fizzbuzz.innerHTML += `<li class="fizzbuzz-list">(${i}) ${(status == 'fizzbuzz' ? 'Scripts unwrapped' : i == 'fizz' ? 'Scripts' : i == 'buzz' ? 'Unwrapped' : 'JS')}</li>`
+        fizzbuzz.innerHTML += `<li class="fizzbuzz-list">(${i}) ${status}</li>`
     }
 }
