@@ -16,6 +16,6 @@ document.getElementById('submit').onclick = () => {
         } else {
             status = 'JS'
         }
-        fizzbuzz.innerHTML += `<li class="fizzbuzz-list">(${i}) ${status}</li>`
+        fizzbuzz.innerHTML += `<li class="fizzbuzz-list">(${i})&#0009; ${status}</li>`
     }
 }
