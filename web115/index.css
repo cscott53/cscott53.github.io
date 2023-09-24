@@ -48,5 +48,8 @@ figure {
     height: 22px;
     width: 84px;
     padding: auto;
-    background-color: orange;
+    background-color: #477878;
+}
+header a {
+    font-size: 1em;
 }
