@@ -45,4 +45,6 @@ figure {
     display: inline-block;
     border-radius: 5px;
     border: 1px solid #444;
+    height: 22px;
+    width: 50px;
 }
