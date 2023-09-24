@@ -41,7 +41,7 @@ a, a:visited {
 figure {
     float: right;
 }
-.link {
+.links {
     display: inline-block;
     border-radius: 5px;
     border: 1px solid #444;
