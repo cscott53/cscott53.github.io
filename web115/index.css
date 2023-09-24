@@ -47,4 +47,6 @@ figure {
     border: 1px solid #444;
     height: 22px;
     width: 84px;
+    padding: auto;
+    background-color: orange;
 }
