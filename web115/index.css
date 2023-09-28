@@ -9,8 +9,6 @@ body {
     height: 100%;
     width: 80vw;
     margin: 0 auto;
-/*     padding-left: 20px;
-    padding-right: 20px; */
 }
 main {
     margin: auto;
@@ -18,8 +16,15 @@ main {
     text-align: left;
     min-height: 70vh;
 }
+main#brand {
+    margin-top: 10px
+}
 h1 {
     text-align: center;
+}
+header {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 footer {
     margin-top: 0px;
