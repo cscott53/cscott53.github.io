@@ -65,7 +65,9 @@ header a {
 }
 .color-palette {
     border-radius: 50%;
-    border: #444 20px solid;
+    border: #444 1px solid;
+    width: 20px;
+    height: 20px;
 }
 .background {
     background-color: #477878;
