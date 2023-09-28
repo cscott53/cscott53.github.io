@@ -57,6 +57,12 @@ h2#headings {
     width: 90px;
     background-color: #477878;
 }
+header .links {
+    height: 20px;
+}
+footer .links {
+    height: 15px;
+}
 header a {
     font-size: 1em;
 }
