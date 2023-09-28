@@ -46,6 +46,9 @@ a, a:visited {
 figure {
     float: right;
 }
+h2#headings {
+    font-family: 'Comic Sans MS';
+}
 .links {
     display: inline-block;
     border-radius: 5px;
@@ -59,4 +62,17 @@ header a {
 }
 .links a {
     margin: auto;
+}
+.color-palette {
+    border-radius: 50%;
+    border: #444 20px solid;
+}
+.background {
+    background-color: #477878;
+}
+.stripes {
+    background-color: #B88686;
+}
+.text-color {
+    background-color: orange;
 }
