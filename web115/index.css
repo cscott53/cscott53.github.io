@@ -72,8 +72,7 @@ header a {
 .color-palette {
     border-radius: 50%;
     border: #444 1px solid;
-    width: 20px;
-    height: 20px;
+    height: 40px;
 }
 .background {
     background-color: #477878;
@@ -86,5 +85,6 @@ header a {
 }
 .color-palette, .color-palette-description {
     display: inline-block;
-    margin: auto 40px
+    margin: auto 40px;
+    width: 40px;
 }
