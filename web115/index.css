@@ -84,7 +84,7 @@ header a {
 .text-color {
     background-color: orange;
 }
-.color-palette, .color-palette-descriptions {
+.color-palette, .color-palette-description {
     display: inline-block;
     margin: auto 40px
 }
