@@ -60,7 +60,7 @@ header .links {
     height: 20px;
 }
 footer .links {
-    height: 15px;
+    height: 20px;
 }
 header a {
     font-size: 1em;
@@ -93,6 +93,7 @@ header a {
 p {
     font-size: 1.2em;
 }
+
 .links,input[type='text'] {
     margin: 5px;
 }
