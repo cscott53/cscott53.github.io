@@ -97,3 +97,9 @@ p {
 .links,input[type='text'] {
     margin: 5px;
 }
+a {
+    text-decoration: none;;
+}
+a:hover {
+    text-decoration: underline;
+}
