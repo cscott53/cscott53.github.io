@@ -4,14 +4,18 @@ document.getElementById('submit').onclick = () => {
     let lastName = document.getElementById('last-name').value
     document.getElementById('welcome').textContent = `Welcome to Scripts Galore, ${firstName} ${middleInitial}. ${lastName}`
     let count = 140
+    let fizz = prompt('Enter first divisor')
+    let buzz = prompt('Enter seconde divisor')
+    let gcf = (a, b) => b === 0 ? a : gcf(b, a % b)
+    let fb = (fizz * buzz)/gcf(fizz,buzz)
     for (let i = 1; i <= count; i++) {
         let fizzbuzz = document.getElementById('fizzbuzz')
         let status = ''
-        if (!(i % 15)) {
+        if (!(i % fb)) {
             status = 'Scripts unwrapped'
-        } else if (!(i % 5)) {
+        } else if (!(i % buzz)) {
             status = 'Unwrapped'
-        } else if (!(i % 3)) {
+        } else if (!(i % fizz)) {
             status = 'Scripts'
         } else {
             status = 'JS'
