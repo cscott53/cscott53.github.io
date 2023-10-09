@@ -12,6 +12,6 @@ document.getElementById('submit').onclick = () => {
         } else {
             status = 'even'
         }
-        fizzbuzz.innerHTML += `<li class="fizzbuzz-list">(${i}) Foo bar - The number is ${status}</li>`
+        fizzbuzz.innerHTML += `<li class="fizzbuzz-list">(${i}) Scripts Unwrapped - The number is ${status}</li>`
     }
 }
