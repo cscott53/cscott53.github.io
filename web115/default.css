@@ -29,7 +29,6 @@ header {
 footer {
     margin-top: 0px;
     margin-bottom: 10px;
-    font-size: 0.8em;
 }
 #photo {
     height: 500px;
@@ -90,4 +89,7 @@ header a {
 }
 .current {
     background-color: black;
+}
+p {
+    font-size: 1.2em;
 }
