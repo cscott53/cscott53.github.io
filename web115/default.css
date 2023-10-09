@@ -88,3 +88,6 @@ header a {
     margin: auto 40px;
     width: 40px;
 }
+.current {
+    background-color: black;
+}
