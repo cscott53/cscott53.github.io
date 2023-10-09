@@ -45,7 +45,7 @@ a, a:visited {
 figure {
     float: right;
 }
-h2#headings {
+#headings {
     font-family: 'Comic Sans MS';
 }
 .links {
@@ -92,4 +92,7 @@ header a {
 }
 p {
     font-size: 1.2em;
+}
+.links,input[type='text'] {
+    margin: 5px;
 }
