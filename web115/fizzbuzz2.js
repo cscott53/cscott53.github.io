@@ -1,3 +1,6 @@
+function checkDivision(a,b) {
+    return (Math.max(a,b) % Math.min(a,b) === 0)
+}
 document.getElementById('submit').onclick = () => {
     let firstName = document.getElementById('first-name').value
     let middleInitial = document.getElementById('middle-initial').value
@@ -5,9 +8,11 @@ document.getElementById('submit').onclick = () => {
     document.getElementById('welcome').textContent = `Welcome to Scripts Galore, ${firstName} ${middleInitial}. ${lastName}`
     let count = 140
     let fizz = prompt('Enter first divisor')
-    let buzz = prompt('Enter seconde divisor')
+    let buzz = prompt('Enter second divisor')
     let gcf = (a, b) => b === 0 ? a : gcf(b, a % b)
-    let fb = (fizz * buzz)/gcf(fizz,buzz)
+    let fb = fizz * buzz
+    if (!checkDivision(fizz,buzz))
+        fb /= gcf(fizz,buzz)
     for (let i = 1; i <= count; i++) {
         let fizzbuzz = document.getElementById('fizzbuzz')
         let status = ''
