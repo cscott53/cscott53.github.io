@@ -56,6 +56,9 @@ figure {
     width: 100px;
     background-color: #477878;
 }
+.links:hover {
+    background-color: black;
+}
 header a {
     font-size: 1em;
 }
