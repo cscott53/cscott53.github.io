@@ -23,7 +23,7 @@ setTimeout(()=>{ /*
             links[6].classList.add("current");break
     }
     headerLinks = document.querySelectorAll('.links a')
-    headerLinks.forEacfh(link => {
+    headerLinks.forEach(link => {
         link.addEventListener('click', () => document.getElementById('data-include').setAttribute('dta-include',`components/${link.id}.html`))
     })
 },500)
