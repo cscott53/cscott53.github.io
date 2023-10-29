@@ -1,9 +1,10 @@
+let links,pagename,headerLinks // so that I can access them within console
 setTimeout(()=>{ /* 
                   * waits until after my other script
                   * adds in the links and content
                   */
-    let links = document.getElementsByClassName('links')
-    let pageName = document.querySelector('.page-name').textContent
+    links = document.getElementsByClassName('links')
+    pageName = document.querySelector('.page-name').textContent
     links.forEacfh(link => link.classList.remove("current"))
     switch(pageName) {
         case 'Home':
@@ -21,7 +22,7 @@ setTimeout(()=>{ /*
         case 'Fizzbuzz 2':
             links[6].classList.add("current");break
     }
-    let headerLinks = document.querySelectorAll('.links a')
+    headerLinks = document.querySelectorAll('.links a')
     headerLinks.forEacfh(link => {
         link.addEventListener('click', () => document.getElementById('data-include').setAttribute('dta-include',`components/${link.id}.html`))
     })
