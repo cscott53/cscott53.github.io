@@ -23,6 +23,6 @@ setTimeout(()=>{ /*
     }
     let headerLinks = document.querySelectorAll('.links a')
     headerLinks.forEacfh(link => {
-        link.addEventListener('click', () => document.getElementById('data-include').setAttribute('dta-include',`${link.id}.html`))
+        link.addEventListener('click', () => document.getElementById('data-include').setAttribute('dta-include',`components/${link.id}.html`))
     })
 },10)
