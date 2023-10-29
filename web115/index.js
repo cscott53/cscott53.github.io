@@ -1,8 +1,5 @@
-let links,pagename,headerLinks // so that I can access them within console
-setTimeout(()=>{ /* 
-                  * waits until after my other script
-                  * adds in the links and content
-                  */
+let links,pagename, headerLinks // so that I can access them within console
+setInterval(()=>{
     links = document.querySelectorAll('.links')
     pageName = document.querySelector('.page-name').textContent
     links.forEach(link => link.classList.remove("current"))
@@ -22,8 +19,10 @@ setTimeout(()=>{ /*
         case 'Fizzbuzz 2':
             links[6].classList.add("current");break
     }
+},100)
+setTimeout(() => {
     headerLinks = document.querySelectorAll('.links a')
     headerLinks.forEach(link => {
         link.addEventListener('click', () => document.getElementById('data-include').setAttribute('data-include',`components/${link.id}.html`))
     })
-},500)
+}, 500)
