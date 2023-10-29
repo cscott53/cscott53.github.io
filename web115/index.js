@@ -5,7 +5,7 @@ setTimeout(()=>{ /*
                   */
     links = document.querySelectorAll('.links')
     pageName = document.querySelector('.page-name').textContent
-    links.forEacfh(link => link.classList.remove("current"))
+    links.forEach(link => link.classList.remove("current"))
     switch(pageName) {
         case 'Home':
             links[0].classList.add("current");break
