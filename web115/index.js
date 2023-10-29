@@ -25,4 +25,4 @@ setTimeout(()=>{ /*
     headerLinks.forEacfh(link => {
         link.addEventListener('click', () => document.getElementById('data-include').setAttribute('dta-include',`components/${link.id}.html`))
     })
-},10)
+},500)
