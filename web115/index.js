@@ -3,7 +3,7 @@ setTimeout(()=>{ /*
                   * waits until after my other script
                   * adds in the links and content
                   */
-    links = document.getElementsByClassName('links')
+    links = document.querySelectorAll('.links')
     pageName = document.querySelector('.page-name').textContent
     links.forEacfh(link => link.classList.remove("current"))
     switch(pageName) {
