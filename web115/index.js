@@ -2,8 +2,9 @@ setTimeout(()=>{ /*
                   * waits until after my other script
                   * adds in the links and content
                   */
-    let links = document.querySelectorAll('.links')
+    let links = document.getElementsByClassName('links')
     let pageName = document.querySelector('.page-name').textContent
+    links.foreach(link=>link.classList.remove("current"))
     switch(pageName) {
         case 'Home':
             links[0].classList.add("current");break
@@ -20,5 +21,8 @@ setTimeout(()=>{ /*
         case 'Fizzbuzz 2':
             links[6].classList.add("current");break
     }
-    
+    let headerLinks = document.querySelectorAll('.links a')
+    headerLinks.forEacfh(link => {
+        link.addEventListener('click', () => document.getElementById('data-include').setAttribute('dta-include',`${link.id}.html`))
+    })
 },10)
