@@ -5,6 +5,9 @@ body {
 p,li {
     font: size 1rem;
 }
+.header a {
+    cursor: pointer;
+}
 #body-container, footer {
     color: orange;
     text-align: center;
