@@ -27,7 +27,7 @@ setTimeout(() => { // this makes sure it waits until my
     headerLinks.forEach(link => {
         link.addEventListener('click', () => {
             document.getElementById('data-include').innerHTML = `<div data-include="components/${link.id}.html">`
-            loadContent()
+            loadContent(window,document)
         })
     })
 }, 500)
