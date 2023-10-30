@@ -1,8 +1,6 @@
 let links,pagename, headerLinks // so that I can access them within console
-setInterval(() => { /* 
-                     * this makes sure that it updates depending on
-                     * the current content in  the <main> element
-                     */
+setInterval(() => { // this makes sure that it updates depending on
+                    // the current content in  the <main> element
     links = document.querySelectorAll('.links')
     pageName = document.querySelector('.page-name').textContent
     links.forEach(link => link.classList.remove("current"))
@@ -23,10 +21,8 @@ setInterval(() => { /*
             links[6].classList.add("current");break
     }
 },100)
-setTimeout(() => {/*
-                   * this makes sure it waits until my
-                   * other script loads in the content
-                   */
+setTimeout(() => { // this makes sure it waits until my
+                   // other script loads in the content
     headerLinks = document.querySelectorAll('.links a')
     headerLinks.forEach(link => {
         link.addEventListener('click', () => document.querySelector('.data-include').setAttribute('data-include',`components/${link.id}.html`))
