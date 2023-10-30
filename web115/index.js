@@ -23,8 +23,11 @@ setInterval(() => { // this makes sure that it updates depending on
 },100)
 setTimeout(() => { // this makes sure it waits until my
                    // other script loads in the content
-    headerLinks = document.querySelectorAll('.links a')
+    headerLinks = document.querySelectorAll('.links a');
     headerLinks.forEach(link => {
-        link.addEventListener('click', () => document.getElementById('data-include').innerHTML = `<div data-include="components/${link.id}.html">`)
+        link.addEventListener('click', () => {
+            document.getElementById('data-include').innerHTML = `<div data-include="components/${link.id}.html">`
+            loadContent()
+        })
     })
 }, 500)

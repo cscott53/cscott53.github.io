@@ -1,4 +1,4 @@
-!function(w, d) {
+let loadContent = function(w, d) {
     if (!w.HTMLInclude) {
         w.HTMLInclude = function() {
             function isInViewport(element, offset) {
@@ -61,4 +61,5 @@
         }
     }
     w.HTMLInclude()
-}(window, document)
+}
+loadContent(window, document)
