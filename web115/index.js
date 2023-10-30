@@ -1,5 +1,4 @@
 let links,pagename, headerLinks // so that I can access them within console
-let script = document.createElement(script)
 setInterval(() => { // this makes sure that it updates depending on
                     // the current content in  the <main> element
     links = document.querySelectorAll('.links')
