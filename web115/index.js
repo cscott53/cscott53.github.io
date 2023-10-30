@@ -33,21 +33,6 @@ setTimeout(() => { // this makes sure it waits until my
             } else {
                 document.head.innerHTML = document.head.innerHTML.replace(`<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet" />`,'')
             }
-            if (link.id == 'fizzbuzz0') {
-                document.head.innerHTML += '<script src="fizzbuzz0.js" defer></script>'
-            } else {
-                document.head.innerHTML = document.head.innerHTML.replace('<script src="fizzbuzz0.js" defer></script>','')
-            }
-            if (link.id == 'fizzbuzz1') {
-                document.head.innerHTML += '<script src="fizzbuzz1.js" defer></script>'
-            } else {
-                document.head.innerHTML = document.head.innerHTML.replace('<script src="fizzbuzz1.js" defer></script>','')
-            }
-            if (link.id == 'fizzbuzz2') {
-                document.head.innerHTML += '<script src="fizzbuzz2.js" defer></script>'
-            } else {
-                document.head.innerHTML = document.head.innerHTML.replace('<script src="fizzbuzz2.js" defer></script>','')
-            }
         })
     })
 }, 500)
