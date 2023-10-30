@@ -1,5 +1,5 @@
 let links,pagename, headerLinks // so that I can access them within console
-setInterval(()=>{
+setInterval(() => {
     links = document.querySelectorAll('.links')
     pageName = document.querySelector('.page-name').textContent
     links.forEach(link => link.classList.remove("current"))
