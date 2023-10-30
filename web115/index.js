@@ -23,6 +23,6 @@ setInterval(()=>{
 setTimeout(() => {
     headerLinks = document.querySelectorAll('.links a')
     headerLinks.forEach(link => {
-        link.addEventListener('click', () => document.getElementById('data-include').setAttribute('data-include',`components/${link.id}.html`))
+        link.addEventListener('click', () => document.querySelector('#data-include').setAttribute('data-include',`components/${link.id}.html`))
     })
 }, 500)
