@@ -21,7 +21,7 @@ setInterval(() => { // this makes sure that it updates depending on
             links[6].classList.add("current");break
     }
 },100)
-setTimeout(() => { // this makes sure it waits until my
+setTimeout(() => { // this makes sure it waits until the
                    // other script loads in the content
     headerLinks = document.querySelectorAll('.links a');
     headerLinks.forEach(link => {
