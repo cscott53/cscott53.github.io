@@ -1,4 +1,4 @@
-document.getElementById('submit').onclick = () => {
+function fizzBuzzSubmit() {
     let firstName = document.getElementById('first-name').value
     let middleInitial = document.getElementById('middle-initial').value
     let lastName = document.getElementById('last-name').value
