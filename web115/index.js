@@ -1,4 +1,5 @@
 let links,pagename, headerLinks // so that I can access them within console
+let script = document.createElement(script)
 setInterval(() => { // this makes sure that it updates depending on
                     // the current content in  the <main> element
     links = document.querySelectorAll('.links')
@@ -28,6 +29,26 @@ setTimeout(() => { // this makes sure it waits until my
         link.addEventListener('click', () => {
             document.getElementById('data-include').innerHTML = `<div data-include="components/${link.id}.html">`
             loadContent(window,document)
+            if (link.id == 'brand') {
+                document.head.innerHTML += `<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet" />`
+            } else {
+                document.head.innerHTML = document.head.innerHTML.replace(`<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet" />`,'')
+            }
+            if (link.id == 'fizzbuzz0') {
+                document.head.innerHTML += '<script src="fizzbuzz0.js" defer></script>'
+            } else {
+                document.head.innerHTML = document.head.innerHTML.replace('<script src="fizzbuzz0.js" defer></script>','')
+            }
+            if (link.id == 'fizzbuzz1') {
+                document.head.innerHTML += '<script src="fizzbuzz1.js" defer></script>'
+            } else {
+                document.head.innerHTML = document.head.innerHTML.replace('<script src="fizzbuzz1.js" defer></script>','')
+            }
+            if (link.id == 'fizzbuzz2') {
+                document.head.innerHTML += '<script src="fizzbuzz2.js" defer></script>'
+            } else {
+                document.head.innerHTML = document.head.innerHTML.replace('<script src="fizzbuzz2.js" defer></script>','')
+            }
         })
     })
 }, 500)
