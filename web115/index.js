@@ -25,6 +25,6 @@ setTimeout(() => { // this makes sure it waits until my
                    // other script loads in the content
     headerLinks = document.querySelectorAll('.links a')
     headerLinks.forEach(link => {
-        link.addEventListener('click', () => document.querySelector('.data-include').setAttribute('data-include',`components/${link.id}.html`))
+        link.addEventListener('click', () => document.getElementById('data-include').innerHTML = `<div data-include="components/${link.id}.html">`)
     })
 }, 500)
