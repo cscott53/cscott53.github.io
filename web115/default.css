@@ -3,7 +3,7 @@ body {
     background-color: #B88686;
 }
 p,li {
-    font: size 1rem;
+    font: size 1em;
 }
 .header a {
     cursor: pointer;
