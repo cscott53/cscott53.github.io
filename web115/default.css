@@ -93,9 +93,6 @@ header a {
 .current {
     background-color: black;
 }
-p {
-    font-size: 1.2em;
-}
 
 .links,input[type='text'] {
     margin: 5px;
