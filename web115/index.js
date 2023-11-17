@@ -1,6 +1,6 @@
 let links,pagename, headerLinks // so that I can access them within console
 setInterval(() => { // this makes sure that it updates depending on
-                    // the current content in  the <main> element
+                    // the current content in the <main> element
     links = document.querySelectorAll('.links')
     pageName = document.querySelector('.page-name').textContent
     links.forEach(link => link.classList.remove("current"))
@@ -36,3 +36,10 @@ setTimeout(() => { // this makes sure it waits until the
         })
     })
 }, 500)
+setTimeout(() => {
+    if(window.location.href.includes('#')) {
+        let pageToLoad = window.location.href.split('#')[1]
+        document.getElementById('data-include').innerHTML = `<div data-include="components/${pageToLoad}.html">`
+        loadContent(window,document)
+    }
+}, 250)
