@@ -93,8 +93,7 @@ header a {
 .current {
     background-color: black;
 }
-
-.links,input[type='text'],input[type='number'] {
+.links,label {
     margin: 5px;
 }
 input[type='text'],input[type='number'] {
