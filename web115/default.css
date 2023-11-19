@@ -94,7 +94,7 @@ header a {
     background-color: black;
 }
 
-.links,input[type='text'] {
+.links,input[type='text'],input[type='number'] {
     margin: 5px;
 }
 a {
