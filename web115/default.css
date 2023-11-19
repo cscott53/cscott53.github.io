@@ -99,7 +99,7 @@ header a {
 }
 input[type='text'],input[type='number'] {
     position: absolute;
-    left: 15vw;
+    right: 15vw;
 }
 a {
     text-decoration: none;
