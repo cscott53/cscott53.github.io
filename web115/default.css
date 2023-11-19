@@ -97,8 +97,12 @@ header a {
 .links,input[type='text'],input[type='number'] {
     margin: 5px;
 }
+input[type='text'],input[type='number'] {
+    position: absolute;
+    left: 15vw;
+}
 a {
-    text-decoration: none;;
+    text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
