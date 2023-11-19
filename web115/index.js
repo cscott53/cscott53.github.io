@@ -42,4 +42,4 @@ setTimeout(() => {
         document.getElementById('data-include').innerHTML = `<div data-include="components/${pageToLoad}.html">`
         loadContent(window,document)
     }
-}, 250)
+}, 125)
