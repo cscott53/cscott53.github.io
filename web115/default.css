@@ -97,7 +97,7 @@ header a {
     margin: 5px;
 }
 label {
-    margin: 2 0px;
+    margin: 10px;
 }
 input[type='text'],input[type='number'] {
     position: relative;
