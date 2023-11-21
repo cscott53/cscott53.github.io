@@ -98,6 +98,7 @@ header a {
 }
 label {
     width: 30%;
+    display: inline-block;
 }
 a {
     text-decoration: none;
