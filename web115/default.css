@@ -98,10 +98,9 @@ header a {
 }
 label {
     margin: 2 0px;
-    
 }
 input[type='text'],input[type='number'] {
-    position: absolute;
+    position: relative;
     right: 15vw;
 }
 a {
