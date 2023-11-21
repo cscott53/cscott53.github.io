@@ -19,6 +19,10 @@ setInterval(() => { // this makes sure that it updates depending on
             links[5].classList.add("current");break
         case 'Fizzbuzz 2':
             links[6].classList.add("current");break
+        case 'Fizzbuzz 3':
+            links[7].classList.add("current");break
+        case 'Fizzbuzz 4':
+            links[8].classList.add("current");break
     }
 },100)
 setTimeout(() => { // this makes sure it waits until the
