@@ -93,11 +93,8 @@ header a {
 .current {
     background-color: black;
 }
-.links {
+.links,label,input[type='text'],input[type='number'] {
     margin: 5px;
-}
-label {
-    margin: 10px;
 }
 input[type='text'],input[type='number'] {
     position: relative;
