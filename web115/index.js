@@ -30,7 +30,7 @@ setTimeout(() => { // this makes sure it waits until the
     headerLinks = document.querySelectorAll('.links a');
     headerLinks.forEach(link => {
         link.addEventListener('click', () => {
-            window.location.href = window.location.href.split('#')[0] + link.id
+            window.location.href = window.location.href.split('#')[0] + '#' + link.id
             document.getElementById('data-include').innerHTML = `<div data-include="components/${link.id != 'intro' ? link.id : 'introduction'/*for the introduction link on homepage and contract page*/}.html">`
             loadContent(window,document)
             if (link.id == 'brand') {
