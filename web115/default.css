@@ -93,8 +93,11 @@ header a {
 .current {
     background-color: black;
 }
-.links,label {
+.links {
     margin: 5px;
+}
+label {
+    margin: 10px;
 }
 input[type='text'],input[type='number'] {
     position: absolute;
