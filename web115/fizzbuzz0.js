@@ -12,6 +12,6 @@ function fizzBuzzSubmit() {
         } else {
             status = 'even'
         }
-        fizzbuzz.innerHTML += `<li class="fizzbuzz-list">${i}. Scripts Unwrapped - The number is ${status}</li>`
+        fizzbuzz.innerHTML += `<li class="fizzbuzz-list"> Scripts Unwrapped - The number is ${status}</li>`
     }
 }

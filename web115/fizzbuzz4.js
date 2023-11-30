@@ -34,6 +34,6 @@ function fizzBuzzSubmit() {
             status = fizzOutput
         else
             status = defaultOutput
-        fizzbuzzList.innerHTML += `<li class="fizzbuzz-list">${i}.&#0009; ${status}</li>`
+        fizzbuzzList.innerHTML += `<li class="fizzbuzz-list">&#0009; ${status}</li>`
     }
 }
