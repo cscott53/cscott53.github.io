@@ -25,6 +25,6 @@ function fizzBuzzSubmit() {
         } else {
             status = 'JS'
         }
-        fizzbuzz.innerHTML += `<li class="fizzbuzz-list">(${i})&#0009; ${status}</li>`
+        fizzbuzz.innerHTML += `<li class="fizzbuzz-list">${i}.&#0009; ${status}</li>`
     }
 }

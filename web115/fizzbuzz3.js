@@ -36,6 +36,6 @@ function fizzBuzzSubmit() {
             status = 'Scripts'
         else
             status = 'JS'
-        fizzbuzzList.innerHTML += `<li class="fizzbuzz-list">(${i})&#0009; ${status}</li>`
+        fizzbuzzList.innerHTML += `<li class="fizzbuzz-list">${i}.&#0009; ${status}</li>`
     }
 }
