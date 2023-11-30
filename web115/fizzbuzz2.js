@@ -5,7 +5,7 @@ function fizzBuzzSubmit() {
     let firstName = document.getElementById('first-name').value
     let middleInitial = document.getElementById('middle-initial').value
     let lastName = document.getElementById('last-name').value
-    document.getElementById('welcome').textContent = `Welcome to Scripts Galore, ${firstName} ${middleInitial}. ${lastName}`
+    document.getElementById('welcome').textContent = `Welcome to Scripts Galore, ${firstName} ${middleInitial}. ${lastName}!`
     let count = 140
     let fizz = prompt('Enter first divisor')
     let buzz = prompt('Enter second divisor')

@@ -10,7 +10,7 @@ function fizzBuzzSubmit() {
     let bangOutput = document.getElementById('third-output').value
     let count = document.getElementById('count').value
     let defaultOutput = document.getElementById('default-output').value
-    document.getElementById('welcome').textContent = `Welcome to Scripts Galore, ${firstName} ${middleInitial}. ${lastName}`
+    document.getElementById('welcome').textContent = `Welcome to Scripts Galore, ${firstName} ${middleInitial}. ${lastName}!`
     let fizzBuzz = fizz * buzz
     let fizzBang = fizz * bang
     let buzzBang = buzz * bang

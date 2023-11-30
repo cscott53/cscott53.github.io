@@ -2,7 +2,7 @@ function fizzBuzzSubmit() {
     let firstName = document.getElementById('first-name').value
     let middleInitial = document.getElementById('middle-initial').value
     let lastName = document.getElementById('last-name').value
-    document.getElementById('welcome').textContent = `Welcome to Scripts Galore, ${firstName} ${middleInitial}. ${lastName}`
+    document.getElementById('welcome').textContent = `Welcome to Scripts Galore, ${firstName} ${middleInitial}. ${lastName}!`
     let count = prompt(`How high do you want to count, ${firstName}?`)
     for (let i = 1; i <= count; i++) {
         let fizzbuzz = document.getElementById('fizzbuzz')
