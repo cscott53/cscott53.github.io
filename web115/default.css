@@ -22,7 +22,7 @@ main {
     text-align: left;
     min-height: 70vh;
 }
-main#brand {
+#brand {
     margin-top: 10px
 }
 h1 {
@@ -44,6 +44,7 @@ footer {
     height: 30px;
     width: auto;
     margin-top: 4px;
+    margin-bottom: 4px;
 }
 a, a:visited {
     color: cyan;
