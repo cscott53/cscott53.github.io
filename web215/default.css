@@ -1,0 +1,28 @@
+@charset "utf-8";
+body {
+    background-color: #f60;
+}
+#body-container {
+    background-color: #876;
+    text-align: center;
+    height: 100%;
+    width: 80vw;
+    margin: 0 auto;
+}
+main {
+    margin: auto;
+    width: 60vw;
+    text-align: left;
+    min-height: 70vh;
+}
+.links {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #444;
+    height: 20px;
+    width: 100px;
+    background-color: #876;
+}
+figure {
+    float: right;
+}
