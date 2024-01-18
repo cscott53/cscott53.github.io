@@ -35,3 +35,22 @@ footer .links {
 figure {
     float: right;
 }
+.color-palette {
+    border-radius: 50%;
+    border: #444 1px solid;
+    height: 40px;
+}
+.background {
+    background-color: #876;
+}
+.stripes {
+    background-color: #f70;
+}
+.text-color {
+    background-color: tan;
+}
+.color-palette, .color-palette-description {
+    display: inline-block;
+    margin: auto 40px;
+    width: 40px;
+}
