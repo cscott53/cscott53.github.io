@@ -12,7 +12,7 @@ let headerContent = `
 <span class="links"><a href="https://www.codecademy.com/profiles/method4794308211">Codecademy</a></span>
 <span class="links"><a href="https://jsfiddle.net/user/cscott53">JSFiddle</a></span>
 <span class="links"><a href="https://www.linkedin.com/in/charles-scott-545b4228a/">Linkedin</a></span><br>
-<br><em>JS Unwrapped: Where code meets clarity</em><br>
+<br><em>MindMingle: Connect, create, collaborate</em><br>
 <p>Page built by Scripts Galore</p>
 <a href="https://validator.w3.org/check?uri=${location.href}"><img src="images/validate_html.png" class="validate" alt="Validate HTML"></a>
 <a href="https://jigsaw.w3.org/css-validator/check/${location.href}"><img src="images/validate_css.png" class="validate" alt="Validate CSS"></a>
