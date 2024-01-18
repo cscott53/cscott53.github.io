@@ -20,6 +20,9 @@ main {
     text-align: left;
     min-height: 70vh;
 }
+footer .links {
+    width: 120px;
+}
 .links {
     display: inline-block;
     border-radius: 5px;

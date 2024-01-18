@@ -8,7 +8,7 @@ let headerContent = `
 <span class="links"><a href="https://github.com/cscott53">Github</a></span>
 <span class="links"><a href="https://cscott53.github.io/">Github.io</a></span>
 <span class="links"><a href="https://cscott53.github.io/web215/">WEB215.io</a></span>
-<span class="links"><a href="https://www.freecodecamp.org/cscott53">FreeCodeCamp</a></span>
+<span class="links"><a href="https://www.freecodecamp.org/cscott53">freeCodeCamp</a></span>
 <span class="links"><a href="https://www.codecademy.com/profiles/method4794308211">Codecademy</a></span>
 <span class="links"><a href="https://jsfiddle.net/user/cscott53">JSFiddle</a></span>
 <span class="links"><a href="https://www.linkedin.com/in/charles-scott-545b4228a/">Linkedin</a></span><br>
