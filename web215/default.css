@@ -12,6 +12,7 @@ body {
     height: 100%;
     width: 80vw;
     margin: 0 auto;
+    overflow: hidden;
 }
 a,a:visited {
     color: #0aa;
