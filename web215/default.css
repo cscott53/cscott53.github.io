@@ -9,7 +9,7 @@ body {
 #body-container {
     background-color: #876;
     text-align: center;
-    min-height:100vh;
+    height: 100%;
     width: 80vw;
     margin: 0 auto;
 }
