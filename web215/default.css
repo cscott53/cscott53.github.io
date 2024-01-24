@@ -61,3 +61,6 @@ label {
     margin-right: 10px;
     display: inline-block;
 }
+input[type='text'] {
+    margin-bottom: 10px;
+}
