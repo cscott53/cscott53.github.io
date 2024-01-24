@@ -61,6 +61,6 @@ label {
     margin-right: 10px;
     display: inline-block;
 }
-input[type='text'] {
+.formrow {
     margin-bottom: 10px;
 }
