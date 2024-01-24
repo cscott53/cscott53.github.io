@@ -4,6 +4,7 @@ let headerContent = `
 <span class="links header"><a href="introduction.html">Introduction</a></span>
 <span class="links header"><a href="contract.html">Contract</a></span>
 <span class="links header"><a href="brand.html">Brand</a></span>
+<span class="links header"><a href="introduction_form.html">Intro form</a></span>
 `, footerContent = `
 <span class="links"><a href="https://github.com/cscott53">Github</a></span>
 <span class="links"><a href="https://cscott53.github.io/">Github.io</a></span>
