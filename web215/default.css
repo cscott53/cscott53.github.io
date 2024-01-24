@@ -57,7 +57,7 @@ figure {
     width: 40px;
 }
 label {
-    width:20vw;
-    text-align: right;
+    width: 20%;
     margin-right: 10px;
+    display: inline-block;
 }
