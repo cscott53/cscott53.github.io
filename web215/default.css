@@ -64,6 +64,6 @@ label {
 .formrow {
     margin-bottom: 10px;
 }
-textarea {
-    height: fit-content;
+label {
+    vertical-align: top;
 }
