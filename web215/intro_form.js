@@ -14,7 +14,7 @@ function getInput(id) {// shorthand form of document.getElementById(eleId).value
     return input.value
 }
 submit.onclick = async () => {//using async to await the photo with reader.onload
-    let photo = await getInput('photo'),
+    let photo = await getInput('photoInput'),
         caption = getInput('caption'),
         fullName = getInput('name'),
         personalBackgd = getInput('personalBackground'),
