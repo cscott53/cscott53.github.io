@@ -27,7 +27,7 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
     console.log(photo)
     document.querySelector('main').innerHTML=`
     <figure>
-        <img id="photo" src="${photo}" style="width:35%; height:auto;">
+        <img id="photo" src="${photo}" style="width:35%; height:auto;"><!--had to set the width and height in case the user inputs a image with a large resolution taking up the whole page-->
         <figcaption>${caption}</figcaption>
     </figure>
     <h3>${fullName}</h3>
