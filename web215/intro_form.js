@@ -1,10 +1,19 @@
 let submit = document.getElementById('submit')
 function getInput(id) {// shorthand form of document.getElementById(eleId).value
     let input = document.getElementById(id)
+    if (input.getAttribute('type') == 'file') {
+        return new Promise((resolve, reject) => {
+            let file = input.files[0]
+            let reader = new FileReader()
+            reader.onload = e => {
+                resolve(e.target.result)
+            }
+        })
+    }
     return input.value
 }
-submit.onclick=()=>{
-    let photo = getInput('photo'),
+submit.onclick = async () => {//using async to await the photo with reader.onload
+    let photo = await getInput('photo'),
         caption = getInput('caption'),
         fullName = getInput('name'),
         personalBackgd = getInput('personalBackground'),
