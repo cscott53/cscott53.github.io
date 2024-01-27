@@ -23,6 +23,7 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
         courses = getInput('courses'),
         funnyItem = getInput('funnyItem'),
         alsoShare = getInput('alsoShare')
+    console.log(photo)
     document.querySelector('main').innerHTML=`
     <figure>
         <img id="photo" src="${photo}">
