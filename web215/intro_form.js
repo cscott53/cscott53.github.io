@@ -8,6 +8,7 @@ function getInput(id) {// shorthand form of document.getElementById(eleId).value
             reader.onload = e => {
                 resolve(e.target.result)
             }
+            reader.readAsDataURL(file)
         })
     }
     return input.value
