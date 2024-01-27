@@ -14,7 +14,7 @@ function getInput(id) {// shorthand form of document.getElementById(eleId).value
     return input.value
 }
 submit.onclick = async () => {//using async to await the photo with reader.onload
-    let photo = await getInput('photoInput'),
+    let photo,
         caption = getInput('caption'),
         fullName = getInput('name'),
         personalBackgd = getInput('personalBackground'),
@@ -24,6 +24,11 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
         courses = getInput('courses'),
         funnyItem = getInput('funnyItem'),
         alsoShare = getInput('alsoShare')
+    try {
+        photo = await getInput('photoInput')
+    } catch (error) {
+        photo = ''// just to make sure the form still submits incase no file is selected
+    }
     document.querySelector('main').innerHTML=`
     <figure style="width:30%;">
         <img id="photo" src="${photo}" style="width:100%; height:auto;"><!--had to set the width and height in case the user inputs a image with a large resolution taking up the whole page-->
