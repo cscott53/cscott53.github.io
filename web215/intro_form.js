@@ -1,10 +1,12 @@
 let submit = document.getElementById('submit')
-function getInput(eleId) {// shorthand form of document.getElementById(eleId).value
-    let input = document.getElementById(eleId)
+function getInput(id) {// shorthand form of document.getElementById(eleId).value
+    let input = document.getElementById(id)
     return input.value
 }
 submit.onclick=()=>{
-    let fullName = getInput('name'),
+    let photo = getInput('photo'),
+        caption = getInput('caption'),
+        fullName = getInput('name'),
         personalBackgd = getInput('personalBackground'),
         profBackgd = getInput('profBackground'),
         academicBackgd = getInput('academicBackground'),
