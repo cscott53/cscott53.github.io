@@ -24,10 +24,9 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
         courses = getInput('courses'),
         funnyItem = getInput('funnyItem'),
         alsoShare = getInput('alsoShare')
-    console.log(photo)
     document.querySelector('main').innerHTML=`
-    <figure>
-        <img id="photo" src="${photo}" style="width:35%; height:auto;"><!--had to set the width and height in case the user inputs a image with a large resolution taking up the whole page-->
+    <figure style="width:30%;">
+        <img id="photo" src="${photo}" style="width:100%; height:auto;"><!--had to set the width and height in case the user inputs a image with a large resolution taking up the whole page-->
         <figcaption>${caption}</figcaption>
     </figure>
     <h3>${fullName}</h3>
@@ -38,7 +37,7 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
         <li><strong>Primary Computer Platform:</strong> Intel Macbook Air 2020 on macOS Sonoma 14</li>
         <li><strong>Courses I'm Taking & Why:</strong>
             <ul>${(()=>{
-                let coursesList = courses.replaceAll('\n...etc','').split('\n')
+                let coursesList = courses.split('\n')
                 let content = ''
                 for (var course of coursesList) {
                     let split = course.split(/\s+-\s+/)
