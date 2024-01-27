@@ -29,6 +29,7 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
         <img id="photo" src="${photo}" style="width:100%; height:auto;"><!--had to set the width and height in case the user inputs a image with a large resolution taking up the whole page-->
         <figcaption>${caption}</figcaption>
     </figure>
+    <h2>Introduction form results</h2>
     <h3>${fullName}</h3>
     <ul>
         <li><strong>Personal Background:</strong> ${personalBackgd}</li>
