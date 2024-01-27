@@ -15,6 +15,10 @@ submit.onclick=()=>{
         funnyItem = getInput('funnyItem'),
         alsoShare = getInput('alsoShare')
     document.querySelector('main').innerHTML=`
+    <figure>
+        <img id="photo" src="${photo}">
+        <figcaption>${caption}</figcaption>
+    </figure>
     <h3>${fullName}</h3>
     <ul>
         <li><strong>Personal Background:</strong> ${personalBackgd}</li>
