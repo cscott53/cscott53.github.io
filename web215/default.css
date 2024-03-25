@@ -37,6 +37,10 @@ footer .links {
 figure {
     float: right;
 }
+#photo {
+    width:300px;
+    height:auto;
+}
 .color-palette {
     border-radius: 50%;
     border: #444 1px solid;

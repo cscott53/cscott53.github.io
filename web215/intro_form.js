@@ -27,11 +27,11 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
     try {
         photo = await getInput('photoInput')
     } catch (error) {
-        photo = ''// just to make sure the form still submits incase no file is selected
+        photo = ''// just to make sure the form still submits in case no file is selected
     }
     document.querySelector('main').innerHTML=`
     <figure style="width:30%;">
-        <img id="photo" src="${photo}" style="width:100%; height:auto;"><!--had to set the width and height in case the user inputs a image with a large resolution taking up the whole page-->
+        <img id="photo" src="${photo}">
         <figcaption>${caption}</figcaption>
     </figure>
     <h2>Introduction form results</h2>
