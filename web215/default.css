@@ -65,7 +65,7 @@ label {
     margin-right: 10px;
     display: inline-block;
 }
-.formrow {
+.formrow, #submit {
     margin-bottom: 10px;
 }
 label {
