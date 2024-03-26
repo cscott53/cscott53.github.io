@@ -37,6 +37,9 @@ footer .links {
 figure {
     float: right;
 }
+figcaption {
+    font-style: italic;
+}
 #photo {
     width:300px;
     height:auto;
