@@ -13,6 +13,25 @@ function getInput(id) {// shorthand form of document.getElementById(eleId).value
     }
     return input.value
 }
+function radioChecked() {
+    let radioButtons = Array.from(document.getElementsByName('radio'))
+    let checked
+    for (var button of radioButtons) {
+        if (button.checked) {
+            checked = button.value
+        }
+    }
+    return checked
+}
+function getCheckedBoxes() {
+    let checked = []
+    for (var checkbox of document.querySelectorAll('input[type="checkbox"]')) {
+        if (checkbox.checked) {
+            checked.push(checkbox.value)
+        }
+    }
+    return checked
+}
 submit.onclick = async () => {//using async to await the photo with reader.onload
     let photo,
         caption = getInput('caption'),
@@ -55,6 +74,8 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
             </ul>
             <li><strong>Funny/Interesting Item to Remember me by:</strong> ${funnyItem}</li>
             <li><strong>I'd Also Like to Share:</strong> ${alsoShare}</li>
+            <li><strong>How did you hear about us?:</strong>${radioChecked()}</li>
+            <li><strong>Programming languages:</strong></li>
     </ul>
     `
 }
