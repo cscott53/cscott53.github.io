@@ -74,8 +74,8 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
             </ul>
             <li><strong>Funny/Interesting Item to Remember me by:</strong> ${funnyItem}</li>
             <li><strong>I'd Also Like to Share:</strong> ${alsoShare}</li>
-            <li><strong>How did you hear about us?:</strong>${radioChecked()}</li>
-            <li><strong>Programming languages:</strong></li>
+            <li><strong>How did you hear about us?:</strong> ${radioChecked()}</li>
+            <li><strong>Programming languages:</strong> ${getCheckedBoxes().join(', ')}</li>
     </ul>
     `
 }
