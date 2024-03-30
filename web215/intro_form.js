@@ -62,7 +62,7 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
         <li><strong>Primary Computer Platform:</strong> Intel Macbook Air 2020 on macOS Sonoma 14</li>
         <li><strong>Courses I'm Taking & Why:</strong>
             <ul>${(()=>{
-                let coursesList = courses.split('\n')
+                let coursesList = courses.split('\n').filter(line=>/\w/.test(line)) //to make sure it doesnt have an empty line to avoid "undefined" issues
                 let content = ''
                 for (var course of coursesList) {
                     let split = course.split(': ')
