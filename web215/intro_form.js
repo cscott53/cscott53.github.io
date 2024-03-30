@@ -65,9 +65,9 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
                 let coursesList = courses.split('\n')
                 let content = ''
                 for (var course of coursesList) {
-                    let split = course.split(/\s+-\s+/)
+                    let split = course.split(': ')
                     content+=`
-                <li><strong>${split[0]}</strong> - ${split[1]}`
+                    <li><strong>${split[0]}</strong>: ${split[1]}`
                 }
                 return content
             })()}
