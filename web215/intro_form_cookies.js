@@ -1,12 +1,20 @@
-let submit = document.getElementById('submit'),
-    setCookie = obj => {
-        for (var key in obj) {
-            document.cookie = `${key}=${obj[key]}; expires=${(date=>{
-                date.setDate(date.getDate() + 3) //makes it expire in 3 days
-                return date
-            })(new Date)};`
-        }
+let submit = document.getElementById('submit')
+function setCookie(obj) {
+    for (var key in obj) {
+        document.cookie = `${key}=${obj[key]}; expires=${(date=>{
+            date.setDate(date.getDate() + 3) //makes it expire in 3 days
+            return date
+        })(new Date)};`
     }
+}
+function getCookies() {
+    let cookieObj = {}
+    document.cookie.split(';').forEach(item=>{
+        let [key,value] = item.split('=')
+        cookieObj[key] = value
+    })
+    return cookieObj
+}
 function getInput(id) {// shorthand form of document.getElementById(id).value
     let input = document.getElementById(id)
     if (input.getAttribute('type') == 'file') {
@@ -50,6 +58,7 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
         academicBackgd = getInput('academicBackground'),
         primaryPlatform = getInput('primaryPlatform'),
         courses = getInput('courses'),
+        coursesList = courses.split('\n').filter(line=>/\w/.test(line)), //to make sure it doesnt have an empty line to avoid "undefined" issues
         funnyItem = getInput('funnyItem'),
         alsoShare = getInput('alsoShare'),
         timeStamp = new Date,
@@ -57,7 +66,7 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
     try {
         photo = await getInput('photoInput')
     } catch (error) {
-        photo = ''// just to make sure the form still submits in case no file is selected
+        photo = '' //just to make sure the form still submits in case no file is selected
     }
     document.querySelector('main').innerHTML=`
     <figure style="width:30%;">
@@ -73,12 +82,11 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
         <li><strong>Primary Computer Platform:</strong> Intel Macbook Air 2020 on macOS Sonoma 14</li>
         <li><strong>Courses I'm Taking & Why:</strong>
             <ul>${(()=>{
-                let coursesList = courses.split('\n').filter(line=>/\w/.test(line)) //to make sure it doesnt have an empty line to avoid "undefined" issues
                 let content = ''
                 for (var course of coursesList) {
                     let split = course.split(': ')
                     content+=`
-                    <li><strong>${split[0]}</strong>: ${split[1]}`
+                    <li><strong>${split[0]}:</strong> ${split[1]}`
                 }
                 return content
             })()}
@@ -91,5 +99,17 @@ submit.onclick = async () => {//using async to await the photo with reader.onloa
             <li><strong>Browser:</strong>${browser} ${version}</li>
     </ul>
     `
-    
+    let cookie = {
+        fullName,photo,caption,personalBackgd,profBackgd,academicBackgd,
+        courses: JSON.stringify(coursesList),
+        funnyItem,alsoShare,
+        hearAboutUs: radioChecked(),
+        progLangs: JSON.stringify(getCheckedBoxes()).
+        timeStamp,
+        browserInfo: browser+' '+version
+    }
+    for (var key in cookie) {
+        cookie[key] = encodeURIComponent(cookie[key])
+    }
+    setCookie(cookie)
 }
