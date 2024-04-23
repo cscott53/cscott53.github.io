@@ -22,5 +22,8 @@ let headerContent = `
 `
 document.querySelector('header').innerHTML = headerContent
 document.querySelector('footer').innerHTML = footerContent
-if(location.href.includes('loggedin=true')) document.cookie = `loggedin=true; expires=${(date=>(date.setDate(date.getDate()+7),date.toString()))(new Date)}; path=/`
+if(location.href.includes('loggedin=true')) {
+    document.cookie = `loggedin=true; expires=${(date=>(date.setDate(date.getDate()+7),date.toString()))(new Date)}; path=/`
+    document.querySelectorAll('header .links a').forEach(a=>a.href+='loggedin=true')
+}
 else document.cookie = `loggedin=false; expires=${(date=>(date.setDate(date.getDate()+7),date.toString()))(new Date)}; path=/`
