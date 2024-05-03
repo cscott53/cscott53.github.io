@@ -6,7 +6,8 @@ let headerContent = `
 <span class="links header"><a href="brand.html">Brand</a></span>
 <span class="links header"><a href="introduction_form.html">Intro form</a></span>
 <span class="links header"><a href="https://web215-mern.onrender.com">MERN stack</a></span>
-<span class="links header"><a href="https://web215-m11-login.onrender.com">Login page</a></span>
+<span class="links header"><a href="https://web215-m11-login.onrender.com">Login/sign up</a></span>
+<span class="links header"><a href="https://web215-m12-project.onrender.com">Project (journal app)</a></span>
 `, footerContent = `
 <span class="links"><a href="https://github.com/cscott53">Github</a></span>
 <span class="links"><a href="https://cscott53.github.io/">Github.io</a></span>

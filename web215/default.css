@@ -23,15 +23,13 @@ main {
     text-align: left;
     min-height: 67vh;
 }
-footer .links {
-    width: 120px;
-}
 .links {
+    font-size: .8em;
     display: inline-block;
     border-radius: 5px;
     border: 1px solid #444;
     height: 20px;
-    width: 100px;
+    width: 120px;
     background-color: #876;
 }
 figure {
