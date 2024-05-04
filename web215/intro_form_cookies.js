@@ -74,11 +74,10 @@ submit.onclick = async () => { //using async to await the photo with reader.onlo
         courses: JSON.stringify(coursesList),
         funnyItem,alsoShare,
         hearAboutUs: radioChecked(),
-        progLangs: JSON.stringify(getCheckedBoxes()).
+        progLangs: JSON.stringify(getCheckedBoxes()),
         timeStamp,
         browserInfo: browser+' '+version
     }
-    debugger
     main.innerHTML = `
     <figure>
         <img id="photo" src="${photo}">
