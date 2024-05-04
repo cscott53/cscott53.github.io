@@ -172,8 +172,8 @@ edit.onclick = ()=>{
     for (var key in data) {
         data[key] = decodeURIComponent(data[key])
     }
-    if (!data.fullName) { //cookie not set
-        //alert('Previous data unavailable or not set. Try submitting new data')
+    if (!data.hasOwnProperty('fullName')) { //cookie not set
+        alert('Previous data unavailable or not set. Try submitting new data')
         return
     }
     progLangs = JSON.parse(progLangs)
