@@ -121,7 +121,7 @@ read.onclick = ()=>{
         data[key] = decodeURIComponent(data[key])
     }
     if (!data.fullName) { //cookie not set
-        alert('Previous data not set or unavailable. Try submitting new data')
+        alert('Previous data unavailable or not set. Try submitting new data')
     }
     let {
         fullName,photo,caption,personalBackgd,profBackgd,academicBackgd,
