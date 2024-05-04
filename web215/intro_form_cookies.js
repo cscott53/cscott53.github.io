@@ -123,8 +123,9 @@ read.onclick = ()=>{
     let {
         fullName,photo,caption,personalBackgd,profBackgd,academicBackgd,
         courses,funnyItem,alsoShare,hearAboutUs,progLangs,browserInfo
-    } = data
-    let coursesList = JSON.parse(courses)
+    } = data,
+        coursesList = JSON.parse(courses),
+        timeStamp = new Date
     progLangs = JSON.parse(progLangs)
     main.innerHTML = `
     <figure>
