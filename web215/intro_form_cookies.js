@@ -208,8 +208,7 @@ edit.onclick = ()=>{
     document.querySelector('h3').innerHTML = '(values filled in from previous data)'
 }
 reset.onclick = ()=>{
-    main.innerHTML = `
-                <form id="introForm">
+    document.querySelector('form').innerHTML = `
                     <div class="formrow"><label for="photoInput">Insert photo here (can be a photo of you or anything):</label>
                     <input type="file" id="photoInput"></div>
                     <div class="formrow"><label for="caption">Enter photo caption here:</label>
@@ -245,7 +244,6 @@ CIS115 - Intro to Programming and Logic: Should have taken this earlier but seat
                     <button type="button" id="edit">Update/edit previous</button>
                     <button type="button" id="reset">Reset previous</button>
                     <script src="intro_form_cookies.js"></script>
-                </form>
             `
     let caption = getInput('caption'),
         fullName = getInput('name'),
