@@ -74,7 +74,7 @@ submit.onclick = async()=>{ //using async to await the photo with reader.onload
     let cookie = {
         fullName,photo,caption,personalBackgd,profBackgd,academicBackgd,
         courses: JSON.stringify(coursesList),
-        funnyItem,alsoShare,
+        primaryPlatform,funnyItem,alsoShare,
         hearAboutUs: radioChecked(),
         progLangs: JSON.stringify(getCheckedBoxes()),
         timeStamp,
