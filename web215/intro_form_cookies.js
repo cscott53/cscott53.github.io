@@ -110,6 +110,7 @@ submit.onclick = async () => { //using async to await the photo with reader.onlo
         timeStamp,
         browserInfo: browser+' '+version
     }
+    debugger
     for (var key in cookie) {
         cookie[key] = encodeURIComponent(cookie[key])
     }
@@ -120,7 +121,6 @@ read.onclick = ()=>{
     for (var key in data) {
         data[key] = decodeURIComponent(data[key])
     }
-    console.log(data) //trying to fix an error
     let {
         fullName,photo,caption,personalBackgd,profBackgd,academicBackgd,
         courses,funnyItem,alsoShare,hearAboutUs,progLangs,browserInfo
