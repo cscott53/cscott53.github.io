@@ -124,6 +124,7 @@ read.onclick = ()=>{
     }
     if (!data.fullName) { //cookie not set
         alert('Previous data unavailable or not set. Try submitting new data')
+        return
     }
     let {
         fullName,photo,caption,personalBackgd,profBackgd,academicBackgd,
@@ -173,6 +174,7 @@ edit.onclick = ()=>{
     }
     if (!data.fullName) { //cookie not set
         alert('Previous data unavailable or not set. Try submitting new data')
+        return
     }
     progLangs = JSON.parse(progLangs)
     let photo = document.getElementById('photo')
