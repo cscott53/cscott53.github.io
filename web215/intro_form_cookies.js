@@ -69,6 +69,15 @@ submit.onclick = async () => { //using async to await the photo with reader.onlo
     } catch (error) {
         photo = '' //just to make sure the form still submits in case no file is selected
     }
+    let cookie = {
+        fullName,photo,caption,personalBackgd,profBackgd,academicBackgd,
+        courses: JSON.stringify(coursesList),
+        funnyItem,alsoShare,
+        hearAboutUs: radioChecked(),
+        progLangs: JSON.stringify(getCheckedBoxes()).
+        timeStamp,
+        browserInfo: browser+' '+version
+    }
     main.innerHTML = `
     <figure>
         <img id="photo" src="${photo}">
@@ -101,16 +110,6 @@ submit.onclick = async () => { //using async to await the photo with reader.onlo
         </li>
     </ul>
     `
-    let cookie = {
-        fullName,photo,caption,personalBackgd,profBackgd,academicBackgd,
-        courses: JSON.stringify(coursesList),
-        funnyItem,alsoShare,
-        hearAboutUs: radioChecked(),
-        progLangs: JSON.stringify(getCheckedBoxes()).
-        timeStamp,
-        browserInfo: browser+' '+version
-    }
-    debugger
     for (var key in cookie) {
         cookie[key] = encodeURIComponent(cookie[key])
     }
