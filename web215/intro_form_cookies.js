@@ -176,7 +176,6 @@ edit.onclick = ()=>{
         alert('Previous data unavailable or not set. Try submitting new data')
         return
     }
-    progLangs = JSON.parse(progLangs)
     let photo = document.getElementById('photo')
         caption = document.getElementById('caption'),
         fullName = document.getElementById('name'),
