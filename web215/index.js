@@ -5,6 +5,7 @@ let headerContent = `
 <span class="links header"><a href="contract.html">Contract</a></span>
 <span class="links header"><a href="brand.html">Brand</a></span>
 <span class="links header"><a href="introduction_form.html">Intro form</a></span>
+<span class="links header"><a href="introduction_form_cookies.html">Intro form 2.0</a></span>
 <span class="links header"><a href="https://web215-mern.onrender.com">MERN stack</a></span>
 <span class="links header"><a href="https://web215-m11-login.onrender.com">Login/sign up</a></span>
 <span class="links header"><a href="https://web215-m12-project.onrender.com">Project (journal app)</a></span>
