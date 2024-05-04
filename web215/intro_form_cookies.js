@@ -35,13 +35,10 @@ function getInput(id) { //shorthand form of document.getElementById(id).value
 }
 function radioChecked() {
     let radioButtons = Array.from(document.getElementsByName('radio'))
-    let checked
     for (var button of radioButtons) {
-        if (button.checked) {
-            checked = button.value
-        }
+        if (button.checked) return button.value
     }
-    return checked
+    return 'none' //trying to avoid 'undefined'
 }
 function getCheckedBoxes() {
     let checked = []
