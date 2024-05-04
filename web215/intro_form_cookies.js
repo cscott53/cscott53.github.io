@@ -105,8 +105,8 @@ submit.onclick = async () => { //using async to await the photo with reader.onlo
             <li><strong>I'd Also Like to Share:</strong> ${alsoShare}</li>
             <li><strong>How did you hear about us?:</strong> ${radioChecked()}</li>
             <li><strong>Programming languages:</strong> ${getCheckedBoxes().join(', ')}</li>
-            <li><strong>Timestamp:</strong>${timeStamp}</li>
-            <li><strong>Browser:</strong>${browser} ${version}</li>
+            <li><strong>Timestamp:</strong> ${timeStamp}</li>
+            <li><strong>Browser:</strong> ${browser} ${version}</li>
         </li>
     </ul>
     `
@@ -158,8 +158,8 @@ read.onclick = ()=>{
             <li><strong>I'd Also Like to Share:</strong> ${alsoShare}</li>
             <li><strong>How did you hear about us?:</strong> ${hearAboutUs}</li>
             <li><strong>Programming languages:</strong> ${progLangs.join(', ')}</li>
-            <li><strong>Timestamp:</strong>${timeStamp}</li>
-            <li><strong>Browser:</strong>${browser} ${version}</li>
+            <li><strong>Timestamp:</strong> ${timeStamp}</li>
+            <li><strong>Browser:</strong> ${browser} ${version}</li>
         </li>
     </ul>
     `
