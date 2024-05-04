@@ -146,9 +146,9 @@ read.onclick = ()=>{
         <li><strong>Courses I'm Taking & Why:</strong>
             <ul>${(()=>{
                 let content = ''
-                for (var course of courses) {
+                for (var course of coursesList) {
                     let split = course.split(': ')
-                    content+=`
+                    content += `
                     <li><strong>${split[0]}:</strong> ${split[1]}`
                 }
                 return content
