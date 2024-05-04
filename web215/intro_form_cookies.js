@@ -128,7 +128,8 @@ read.onclick = ()=>{
         courses,funnyItem,alsoShare,hearAboutUs,progLangs,browserInfo
     } = data,
         coursesList = JSON.parse(courses),
-        timeStamp = new Date
+        timeStamp = new Date,
+        [browser,version] = browserInfo.split` `
     progLangs = JSON.parse(progLangs)
     main.innerHTML = `
     <figure>
