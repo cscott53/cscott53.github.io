@@ -120,6 +120,9 @@ read.onclick = ()=>{
     for (var key in data) {
         data[key] = decodeURIComponent(data[key])
     }
+    if (!data.fullName) { //cookie not set
+        alert('Previous data not set or unavailable. Try submitting new data')
+    }
     let {
         fullName,photo,caption,personalBackgd,profBackgd,academicBackgd,
         courses,funnyItem,alsoShare,hearAboutUs,progLangs,browserInfo
