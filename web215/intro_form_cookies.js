@@ -205,4 +205,5 @@ edit.onclick = ()=>{
             e.checked = true
         }
     })
+    document.querySelector('h3').innerHTML = '(values filled in from previous data)'
 }
