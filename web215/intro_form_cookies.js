@@ -13,7 +13,7 @@ function getCookies() {
     let cookieObj = {}
     document.cookie.split(';').forEach(item=>{
         let [key,value] = item.split('=')
-        cookieObj[key] = value
+        cookieObj[key.trim()] = value
     })
     return cookieObj
 }
@@ -78,7 +78,6 @@ submit.onclick = async () => { //using async to await the photo with reader.onlo
         timeStamp,
         browserInfo: browser+' '+version
     }
-    debugger
     main.innerHTML = `
     <figure>
         <img id="photo" src="${photo}">
