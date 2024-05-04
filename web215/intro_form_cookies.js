@@ -1,6 +1,8 @@
 let main = document.querySelector('main'),
     submit = document.getElementById('submit'),
-    read = document.getElementById('read')
+    read = document.getElementById('read'),
+    edit = document.getElementById('edit'),
+    reset = document.getElementById('reset')
 function setCookie(obj) {
     for (var key in obj) {
         document.cookie = `${key}=${obj[key]}; expires=${(date=>{
@@ -50,7 +52,7 @@ function getCheckedBoxes() {
     }
     return checked
 }
-submit.onclick = async () => { //using async to await the photo with reader.onload
+submit.onclick = async()=>{ //using async to await the photo with reader.onload
     let photo,
         caption = getInput('caption'),
         fullName = getInput('name'),
@@ -163,4 +165,43 @@ read.onclick = ()=>{
         </li>
     </ul>
     `
+}
+edit.onclick = ()=>{
+    let data = getCookies()
+    for (var key in data) {
+        data[key] = decodeURIComponent(data[key])
+    }
+    if (!data.fullName) { //cookie not set
+        alert('Previous data unavailable or not set. Try submitting new data')
+    }
+    progLangs = JSON.parse(progLangs)
+    let photo = document.getElementById('photo')
+        caption = document.getElementById('caption'),
+        fullName = document.getElementById('name'),
+        personalBackgd = document.getElementById('personalBackground'),
+        profBackgd = document.getElementById('profBackground'),
+        academicBackgd = document.getElementById('academicBackground'),
+        primaryPlatform = document.getElementById('primaryPlatform'),
+        courses = document.getElementById('courses'),
+        funnyItem = document.getElementById('funnyItem'),
+        alsoShare = document.getElementById('alsoShare')
+    caption.value = data.caption
+    fullName.value = data.fullName
+    personalBackgd.innerHTML = data.personalBackgd
+    profBackgd.innerHTML = data.profBackgd
+    academicBackgd.innerHTML = data.academicBackgd
+    primaryPlatform.value = data.primaryPlatform
+    courses.innerHTML = JSON.parse(data.courses).join`\n`
+    funnyItem.value = data.funnyItem
+    alsoShare.innerHTML = data.alsoShare
+    let radioButton = data.hearAboutUs,
+        progLangs = JSON.parse(data.progLangs)
+    Array.from(document.getElementsByName('radio')).forEach(e=>{
+        if (radioButton == e.value) e.checked = true
+    })
+    document.querySelectorAll('input[type="checkbox"]').forEach(e=>{
+        if (progLangs.includes(e.value)) {
+            e.checked = true
+        }
+    })
 }
