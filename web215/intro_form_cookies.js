@@ -78,6 +78,7 @@ submit.onclick = async () => { //using async to await the photo with reader.onlo
         timeStamp,
         browserInfo: browser+' '+version
     }
+    debugger
     main.innerHTML = `
     <figure>
         <img id="photo" src="${photo}">
