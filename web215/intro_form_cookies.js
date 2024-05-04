@@ -121,8 +121,8 @@ read.onclick = ()=>{
         data[key] = decodeURIComponent(data[key])
     }
     let {
-        fullName,photo,caption,personalBackgd,profBackgd,academicBackgd,courses,
-        funnyItem,alsoShare,hearAboutUs,progLangs,timeStamp,browserInfo
+        fullName,photo,caption,personalBackgd,profBackgd,academicBackgd,
+        courses,funnyItem,alsoShare,hearAboutUs,progLangs,browserInfo
     } = data
     let coursesList = JSON.parse(courses)
     progLangs = JSON.parse(progLangs)
