@@ -1,4 +1,4 @@
-* {box-sizing: border-box;}
+html,body,div,li {box-sizing: border-box;}
 html,body {
     height: 100%;
     padding: 0;
