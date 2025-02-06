@@ -48,6 +48,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
 }
 nav li {
@@ -75,4 +76,7 @@ figure img {
     margin: auto;
     display: block;
     margin-bottom: .25em;
+}
+footer {
+    width: inherit;
 }
