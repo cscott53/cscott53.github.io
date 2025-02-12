@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Charles Scott's Calm Sheep - WEB250 - Home</title>
-    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
 </head>
 <body>
