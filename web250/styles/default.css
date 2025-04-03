@@ -64,19 +64,24 @@ nav li {
 }
 figure {
     width: fit-content;
-    margin: auto;
+    float: right;
 }
 figcaption {
     font-style: italic;
     text-align: center;
 }
 figure img {
-    height: 200px;
-    width: auto;
+    /* height: 200px;
+    width: auto; */
     margin: auto;
     display: block;
     margin-bottom: .25em;
 }
 footer {
     width: inherit;
+}
+footer nav li {
+    width: fit-content;
+    padding-right: .5em;
+    padding-left: .5em;
 }
