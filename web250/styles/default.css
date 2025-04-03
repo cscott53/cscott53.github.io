@@ -42,6 +42,7 @@ main {
     width: 80%;
     overflow: auto;
     flex: 1;
+    font-size: 1.2em;
 }
 nav ul {
     list-style-type: none;
